@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meus Objetivos do Ano</title>
+  <style>
+    /* Reset e Estilos Base */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    h1 {
+      color: #2c3e50;
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: #3498db;
+      font-size: 1.8rem;
+      margin-bottom: 20px;
+      display: flex;
+      align-items: center;
+    }
+
+    h3 {
+      color: #7f8c8d;
+      font-size: 1.2rem;
+      margin-bottom: 15px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .goal-number {
+      background-color: #3498db;
+      color: white;
+      padding: 5px 12px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      margin-right: 15px;
+    }
+
+    /* Visão Geral */
+    .overview {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 40px;
+    }
+
+    .goals-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .goal-card {
+      background-color: #e3f2fd;
+      padding: 20px;
+      border-radius: 8px;
+      transition: transform 0.3s, box-shadow 0.3s;
+      text-align: center;
+    }
+
+    .goal-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .goal-card h3 {
+      color: #1a5276;
+      margin-bottom: 10px;
+    }
+
+    /* Detalhes das metas */
+    .goal-detail {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
+    }
+
+    .time-tracker {
+      margin-top: 25px;
+    }
+
+    .time-units.clean {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 1.1rem;
+      color: #2c3e50;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .time-units.clean span {
+      padding: 5px 10px;
+    }
+
+    /* Responsivo */
+    @media (max-width: 768px) {
+      .container {
+        padding: 20px;
+      }
+
+      .goals-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+
+      .time-units.clean {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Meus objetivos do ano</h1>
+    </header>
+
+    <main>
+      <section class="overview">
+        <h2>Metas Principais</h2>
+        <div class="goals-grid">
+          <div class="goal-card">
+            <h3>ENEM</h3>
+            <p>Fazer o ENEM em Novembro</p>
+          </div>
+          <div class="goal-card">
+            <h3>Academia</h3>
+            <p>Começar na academia</p>
+          </div>
+          <div class="goal-card">
+            <h3>Escola</h3>
+            <p>Passar de ano e me formar</p>
+          </div>
+          <div class="goal-card">
+            <h3>Alimentação</h3>
+            <p>Cortar o refrigerante</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Detalhes de cada objetivo -->
+      <section class="goal-detail">
+        <h2><span class="goal-number">01</span> Fazer o ENEM em Novembro</h2>
+        <div class="time-tracker">
+          <h3>TEMPO RESTANTE</h3>
+          <div class="time-units clean">
+            <span>190 dias</span>
+            <span>15 horas</span>
+            <span>30 min</span>
+            <span>45 seg</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="goal-detail">
+        <h2><span class="goal-number">02</span> Começar na academia</h2>
+        <div class="time-tracker">
+          <h3>TEMPO RESTANTE</h3>
+          <div class="time-units clean">
+            <span>100 dias</span>
+            <span>6 horas</span>
+            <span>15 min</span>
+            <span>0 seg</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="goal-detail">
+        <h2><span class="goal-number">03</span>Passar de ano e me formar</h2>
+        <div class="time-tracker">
+          <h3>TEMPO RESTANTE</h3>
+          <div class="time-units clean">
+            <span>200 dias</span>
+            <span>12 horas</span>
+            <span>0 min</span>
+            <span>0 seg</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="goal-detail">
+        <h2><span class="goal-number">04</span> Cortar o refrigerante</h2>
+        <div class="time-tracker">
+          <h3>TEMPO RESTANTE</h3>
+          <div class="time-units clean">
+            <span>60 dias</span>
+            <span>12 horas</span>
+            <span>0 min</span>
+            <span>0 seg</span>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
